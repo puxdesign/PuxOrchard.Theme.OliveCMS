@@ -25,6 +25,17 @@ To quickly integrate OliveCMS Theme into your OrchardCore CMS:
 2. **Cloning the Repository:**
    - Clone this repository, add references to your project, and activate the theme in the admin dashboard.
    - Alternatively, you can clone and utilize the styles in your own custom admin theme.
+  
+## Supported versions of OrchardCore
+- it was created on 1.8.4 version of OrchardCore
+- then it was ported and adapted to support 2.1.4 version of OrchardCore
+- it should be backwards compatible with version > 1.8.3
+- you may need to build the theme on your own, in case nuget for your version is not available
+
+## Disclaimer
+If you will start using OliveCMS Theme, keep in mind, that we primarily use this theme on our own projects. That means, it is designed to work with all our custom modules, that may interfere with standard CMS interface. Therefore, there may be visual bugs in some sections, that we do not use or we have modified in our custom modules. 
+
+If you encounter a bug, feel free to create an issue.
 
 ## Build Instructions
 
