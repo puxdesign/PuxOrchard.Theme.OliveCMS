@@ -60,4 +60,4 @@ Your thoughts and contributions are pivotal to the continuous evolution of Olive
 
 Brought to you by the passion-infused folks at [PUXdesign](https://www.puxdesign.cz/en/contact) — where beauty meets functionality.
 
-[⭐ Star us on GitHub](https://github.com/puxdesign/PuxOrchard.Theme.OliveCMS/subscription) — every star makes us more motivated!
+[⭐ Star us on GitHub](https://github.com/puxdesign/PuxOrchard.Theme.OliveCMS) — every star makes us more motivated!
