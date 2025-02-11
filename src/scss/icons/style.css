@@ -1,0 +1,148 @@
+@font-face {
+  font-family: 'icomoon-cms';
+  src:  url('fonts/icomoon.eot?20hilx');
+  src:  url('fonts/icomoon.eot?20hilx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.woff2?20hilx') format('woff2'),
+    url('fonts/icomoon.ttf?20hilx') format('truetype'),
+    url('fonts/icomoon.woff?20hilx') format('woff'),
+    url('fonts/icomoon.svg?20hilx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"]:not(.item-label), [class*=" icon-"]:not(.item-label) {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon-cms' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Add-widget:before {
+  content: "\e900";
+  color: #41b670;
+}
+.icon-Author:before {
+  content: "\e901";
+}
+.icon-Bin:before {
+  content: "\e902";
+}
+.icon-Cross:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-Dark-mode:before {
+  content: "\e904";
+}
+.icon-Drag-icon:before {
+  content: "\e905";
+  color: #757575;
+}
+.icon-Dropdown-arrow:before {
+  content: "\e906";
+}
+.icon-Checkbox_active .path1:before {
+  content: "\e907";
+  color: rgb(238, 255, 243);
+}
+.icon-Checkbox_active .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(65, 182, 112);
+}
+.icon-Checkbox_active .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(65, 182, 112);
+}
+.icon-Checkbox_deactive:before {
+  content: "\e90a";
+  color: #979b9f;
+}
+.icon-Label:before {
+  content: "\e90b";
+  color: #757575;
+}
+.icon-Language:before {
+  content: "\e90c";
+}
+.icon-Last-edit:before {
+  content: "\e90d";
+}
+.icon-Light-mode .path1:before {
+  content: "\e90e";
+  color: rgb(37, 37, 37);
+}
+.icon-Light-mode .path2:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(41, 45, 50);
+}
+.icon-MediaSelectorImage_add-image:before {
+  content: "\e910";
+}
+.icon-MediaSelectorImage_add-text:before {
+  content: "\e911";
+}
+.icon-MediaSelectorImage_delete:before {
+  content: "\e912";
+}
+.icon-MediaSelectorImage_delete-image:before {
+  content: "\e913";
+  color: #ececec;
+}
+.icon-MediaSelectorImage_preview-image:before {
+  content: "\e914";
+  color: #ececec;
+}
+.icon-MediaSelectorImage_scale-image:before {
+  content: "\e915";
+}
+.icon-Menu_double-arrow:before {
+  content: "\e916";
+}
+.icon-Menu_minus:before {
+  content: "\e917";
+}
+.icon-Menu_plus:before {
+  content: "\e918";
+}
+.icon-MenuIcon_Configuration:before {
+  content: "\e919";
+}
+.icon-MenuIcon_Content:before {
+  content: "\e91a";
+}
+.icon-MenuIcon_Design:before {
+  content: "\e91b";
+}
+.icon-MenuIcon_Search:before {
+  content: "\e91c";
+}
+.icon-MenuIcon_Workflows:before {
+  content: "\e91d";
+}
+.icon-Page-type:before {
+  content: "\e91e";
+}
+.icon-Profile:before {
+  content: "\e91f";
+}
+.icon-Search:before {
+  content: "\e920";
+}
+.icon-Tip:before {
+  content: "\e921";
+}
+.icon-View-site:before {
+  content: "\e922";
+}

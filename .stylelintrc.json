@@ -1,0 +1,18 @@
+{
+    "extends": [
+        "stylelint-config-idiomatic-order",
+        "stylelint-config-recommended-scss"
+    ],
+    "plugins": [
+        "stylelint-order",
+        "stylelint-scss"
+    ],
+    "rules": {
+        "order/properties-alphabetical-order": null,
+        "scss/at-import-no-partial-leading-underscore": null,
+        "max-nesting-depth": 5,
+        "selector-no-qualifying-type": null,
+        "media-feature-name-no-vendor-prefix": null,
+        "rule-empty-line-before": "always"
+    }
+}

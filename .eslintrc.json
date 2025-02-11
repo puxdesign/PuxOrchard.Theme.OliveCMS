@@ -1,0 +1,45 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"extends": [
+		"eslint:recommended",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:prettier/recommended",
+		"plugin:react-hooks/recommended"
+	],
+	"plugins": [
+		"@typescript-eslint",
+		"prettier",
+		"simple-import-sort"
+	],
+	"parserOptions": {
+		"ecmaVersion": 2022,
+		"sourceType": "module"
+	},
+	"ignorePatterns": [
+		"dist",
+		".eslintrc.json"
+	],
+	"env": {
+		"browser": true,
+		"node": true
+	},
+	"rules": {
+		"simple-import-sort/imports": "error",
+		"simple-import-sort/exports": "error",
+		"quotes": "off",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": "off",
+		"@typescript-eslint/quotes": [
+			2,
+			"backtick",
+			{
+				"avoidEscape": true
+			}
+		],
+		"semi": [
+			"error",
+			"always"
+		],
+		"@typescript-eslint/no-explicit-any": "error"
+	}
+}

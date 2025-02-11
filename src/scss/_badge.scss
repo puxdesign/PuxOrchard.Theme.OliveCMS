@@ -1,0 +1,99 @@
+// Base class
+//
+// Requires one of the contextual, color modifier classes for `color` and
+// `background-color`.
+
+.badge {
+  // scss-docs-start badge-css-vars
+  --#{$prefix}badge-padding-x: #{$badge-padding-x};
+  --#{$prefix}badge-padding-y: #{$badge-padding-y};
+  @include rfs($badge-font-size, --#{$prefix}badge-font-size);
+  --#{$prefix}badge-font-weight: #{$badge-font-weight};
+  --#{$prefix}badge-color: #{$badge-color};
+  --#{$prefix}badge-border-radius: #{$badge-border-radius};
+  // scss-docs-end badge-css-vars
+
+  display: inline-block;
+  padding: var(--#{$prefix}badge-padding-y) var(--#{$prefix}badge-padding-x);
+  @include font-size(var(--#{$prefix}badge-font-size));
+  font-weight: var(--#{$prefix}badge-font-weight);
+  line-height: 1;
+  color: var(--#{$prefix}badge-color);
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  @include border-radius(var(--#{$prefix}badge-border-radius));
+  @include gradient-bg();
+
+  // Empty badges collapse automatically
+  &:empty {
+    display: none;
+  }
+  &:has(.svg-inline--fa.fa-calendar),
+  &:has(.svg-inline--fa.fa-file-lines),
+  &:has(.svg-inline--fa.fa-globe),
+  &:has(.svg-inline--fa.fa-user),
+  &:has(.svg-inline--fa.fa-tag),
+  &:has(.svg-inline--fa.fa-check),
+  &:has(.svg-inline--fa.fa-pencil) {
+    &::before {
+        font-family: 'icomoon-cms' !important;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        font-size: 0.875rem;
+        line-height: 1rem; 
+        text-align: center;
+        color: $gray-900;
+    }
+    svg {
+        display: none;
+    }
+  }
+  &:has(.svg-inline--fa.fa-calendar) {
+    &::before {
+      content: "\e90d";
+    }
+  }
+  &:has(.svg-inline--fa.fa-file-lines) {
+    &::before {
+      content: "\e91e";
+    }
+  }
+  &:has(.svg-inline--fa.fa-globe) {
+    &::before {
+      content: "\e90c";
+    }
+  }
+  &:has(.svg-inline--fa.fa-user ) {
+    &::before {
+      content: "\e901";
+    }
+  }
+  &:has(.svg-inline--fa.fa-tag ) {
+    &::before {
+      content: "\e90b";
+    }
+  }
+  &:has(.svg-inline--fa.fa-check ) {
+    &::before {
+      content: "\e928";
+      color: $green;
+      font-weight: 700;
+    }
+  }
+  &:has(.svg-inline--fa.fa-pencil ) {
+    &::before {
+      content: "\e927";
+      color: $yellow;
+      font-weight: 700;
+    }
+  }
+}
+
+// Quick fix for badges in buttons
+.btn .badge {
+  position: relative;
+  top: -1px;
+}

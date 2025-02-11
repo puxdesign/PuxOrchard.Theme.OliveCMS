@@ -1,0 +1,521 @@
+.accordion .widget-template-placeholder .card-header .widget-editor-handle,
+.accordion .widget-template-placeholder .card-header .widget-editor-header-text,
+.accordion .widget-template-placeholder .card-header .hint {
+    color: #000 !important;
+}
+
+.accordion .widget-template-placeholder .card-header .btn-outline-secondary {
+    border-color: #000 !important;
+    color: #000 !important;
+}
+
+.accordion .widget-template-placeholder .card-header .btn-outline-secondary:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+}
+
+
+.accordion,
+.edit-container {
+    .widget-template-placeholder .card-header {
+        background-color: $white !important;
+        border-bottom-color: #ededed !important;
+        padding: 0.82rem 1.25rem !important;
+        /*background-image: linear-gradient(to top, #21629a 0%, #3883c4 80%, #3883c4 100%);*/
+    }
+}
+
+.accordion .widget-template-placeholder .collapsed .card-header {
+    background-color: #a9a9a9 !important;
+}
+
+.accordion .widget-template-placeholder .card {
+    border-color: #ededed !important;
+    box-shadow: none;
+}
+
+.accordion .widget-template-placeholder [id*=Image] .card {
+    box-shadow: none !important;
+}
+
+.accordion .widget-template-placeholder .widget-editor-body {
+    background-color: #eaeaea;
+}
+
+.trumbowyg-box .trumbowyg-editor {
+    min-height: 260px;
+    background: #fff;
+}
+
+.accordion .widget-template-placeholder .tab-pane {
+    border: none !important;
+    padding-bottom: 1px;
+}
+
+.accordion .widget-template-placeholder .tab-content {
+    border-top: 3px solid #fff !important;
+}
+
+.accordion .widget-template-placeholder .nav-item {
+    margin-right: 0 !important;
+}
+
+.accordion .widget-template-placeholder .nav-tabs .nav-link{
+    border-radius: 0 !important;
+    min-width: 150px;
+    text-align: center;
+}
+
+.accordion .widget-template-placeholder .custom-checkbox .form-check-label::after,
+.accordion .widget-template-placeholder .custom-checkbox .form-check-label::before {
+    width: 1.5rem;
+    height: 1.5rem;
+    left: -2rem !important;
+    outline:0 !important;
+}
+
+.accordion .widget-template-placeholder .form-check-input:focus ~ .form-check-label::before {
+    box-shadow: none !important;
+    border-color: #adb5bd !important;
+}
+
+.accordion .widget-template-placeholder .form-check-input:not(:disabled):active ~ .form-check-label::before {
+    background: #fff !important;
+    border-color: #adb5bd !important;
+}
+
+.accordion .widget-template-placeholder .custom-checkbox {
+    padding-left: 2rem !important;
+    min-height: 1.5rem !important;
+}
+
+.accordion .widget-template-placeholder .form-check-label{
+    line-height:1.8rem;
+}
+
+.accordion .widget-template-placeholder .form-check-input:checked ~ .form-check-label::before{
+    background:#000 !important;
+    border-color:#000 !important;
+}
+
+.btn-widget-add-below-wrapper {
+    min-height: 70px !important;
+    padding: 0 0.25rem;
+}
+
+.btn-widget-add-below {
+    height: 70px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fff;
+    opacity: 1 !important;
+}
+
+.btn-widget-add-below:before {
+    content: "ADD widgets";
+    width: 100%;
+    text-align: center;
+    opacity:.5;
+}
+
+.btn-widget-add-below > .btn-group {
+    position: static !important;
+}
+
+.btn-widget-add-below .btn {
+    min-width: 100px;
+}
+
+.btn-primary.add-widget {
+    display: inline-flex !important;
+    align-items: center;
+}
+
+.btn-primary.add-widget:before {
+    color: #fff;
+}
+
+.btn-widget-metadata .dropdown-menu,
+.btn-widget-add-below .dropdown-menu {
+    width: 600px;
+    margin-left: -260px !important;
+    flex-wrap: wrap;
+    max-height: 50vh !important;
+}
+
+.btn-widget-metadata .dropdown-menu {
+    margin-left: 150px !important;
+}
+
+.btn-widget-metadata .btn-group .btn-group:first-child {
+    display:none !important;
+}
+
+.btn-widget-metadata .dropdown-menu.show,
+.btn-widget-add-below .dropdown-menu.show {
+    display: flex !important;
+    opacity: 1;
+}
+
+.btn-widget-metadata .dropdown-item,
+.btn-widget-add-below .dropdown-item {
+    width: 47% !important;
+    margin: 0 0.5rem;
+    display: flex !important;
+    align-items: center;
+}
+
+.btn-bag-add {
+   margin-top:.5rem;
+   min-width: 100px;
+}
+
+.btn-bag-add .dropdown-menu {
+    min-width: 200px !important;
+    padding: .5rem !important;
+}
+
+.btn-bag-add .dropdown-menu .dropdown-item {
+    display: flex !important;
+    align-items: center;
+}
+
+[data-widget-type]:before {
+    margin: 0 10px 0 0;
+    color: #000;
+    font-size: 18px;
+}
+
+[data-widget-type]{
+    display:flex;
+    align-items: center;
+}
+
+[data-widget-type]:before {
+    font-family: 'icomoon-cms' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\e91a";
+    display:block;
+    width: 25px;
+    min-width:25px;
+    background-color: inherit;
+    border-radius: unset;
+}
+
+[data-widget-type*=Section]:before {
+    content: "\e938";
+}
+
+[data-widget-type*=SectionModal]:before {
+    content: "\e937";
+}
+
+[data-widget-type*=BenefitsContainer]:before {
+    content: "\e910";
+}
+
+[data-widget-type*=BenefitItem]:before {
+    content: "\e910";
+}
+
+[data-widget-type*=Collapse]:before {
+    content: "\e911";
+}
+
+[data-widget-type*=CrosslinkContainer]:before {
+    content: "\e912";
+}
+
+[data-widget-type*=CTA]:before {
+    content: "\e914";
+}
+
+[data-widget-type*=CustomCode]:before {
+    content: "\e915";
+}
+
+[data-widget-type*=DownloadsContainer]:before {
+    content: "\e916";
+}
+
+[data-widget-type*=DownloadItem]:before {
+    content: "\e916";
+}
+
+[data-widget-type*=Gallery]:before {
+    content: "\e919";
+}
+
+[data-widget-type*=Iframe]:before {
+    content: "\e91a";
+}
+
+[data-widget-type*=ImageContent]:before {
+    content: "\e91b";
+}
+
+
+[data-widget-type*=LogosContainer]:before {
+    content: "\e91d";
+}
+
+[data-widget-type*=Logo]:before {
+    content: "\e91d";
+}
+
+[data-widget-type*=Map]:before {
+    content: "\e91e";
+}
+
+[data-widget-type*=NumbersContainer]:before {
+    content: "\e920";
+}
+
+
+[data-widget-type*=NumberItem]:before {
+    content: "\e920";
+}
+
+[data-widget-type*=PersonContainer]:before {
+    content: "\e921";
+}
+
+[data-widget-type*=Person]:before {
+    content: "\e921";
+}
+
+[data-widget-type*=Repeater]:before {
+    content: "\e934";
+}
+
+[data-widget-type*=TabsContainer]:before {
+    content: "\e926";
+}
+
+[data-widget-type*=TabItem]:before {
+    content: "\e926";
+}
+
+[data-widget-type*=TestimonialItem]:before {
+    content: "\e927";
+}
+
+[data-widget-type*=TestimonialsContainer]:before {
+    content: "\e928";
+}
+
+[data-widget-type*=TopImage]:before {
+    content: "\e92b";
+}
+
+[data-widget-type*=TopImageContainer]:before {
+    content: "\e92c";
+}
+
+[data-widget-type*=Video]:before {
+    content: "\e92e";
+}
+
+[data-widget-type*=Text]:before {
+    content: "\e929";
+}
+
+[data-widget-type*=Wysiwyg]:before {
+    content: "\e932";
+}
+
+[data-widget-type*=Form]:before {
+    content: "\e918";
+}
+
+[data-widget-type*=Input]:before {
+    content: "\e91c";
+}
+
+[data-widget-type*=Submit]:before {
+    content: "\e925";
+}
+
+[data-widget-type*=Textarea]:before {
+    content: "\e92a";
+}
+
+html[dir][data-bs-theme=light] .trumbowyg-editor thead,
+html[dir][data-bs-theme=light] .trumbowyg-editor tbody,
+html[dir][data-bs-theme=light] .trumbowyg-editor tfoot,
+html[dir][data-bs-theme=light] .trumbowyg-editor tr,
+html[dir][data-bs-theme=light] .trumbowyg-editor td,
+html[dir][data-bs-theme=light] .trumbowyg-editor th,
+html[dir][data-bs-theme=dark] .trumbowyg-editor thead,
+html[dir][data-bs-theme=dark] .trumbowyg-editor tbody,
+html[dir][data-bs-theme=dark] .trumbowyg-editor tfoot,
+html[dir][data-bs-theme=dark] .trumbowyg-editor tr,
+html[dir][data-bs-theme=dark] .trumbowyg-editor td,
+html[dir][data-bs-theme=dark] .trumbowyg-editor th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/*Used to set "empty" content in table cells. Without it cells have 0 height and only padding. INT-886 */
+html[dir][data-bs-theme=light] .trumbowyg-editor td:after,
+html[dir][data-bs-theme=light] .trumbowyg-editor th:after,
+html[dir][data-bs-theme=dark] .trumbowyg-editor td:after,
+html[dir][data-bs-theme=dark] .trumbowyg-editor th:after {
+        content: ".";
+        opacity: 0;
+    }
+
+[data-widget-type*=Multiple]:before {
+    content: "\e91f";
+}
+
+
+.ta-content .edit-container .edit-body .edit-item-secondary //,
+/* .mb-3:has(.btn.save)*/ {
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+    background: $gray-200;
+    padding: 1rem 0;
+    border-top: 2px solid $gray-300;
+    width: 100%;
+    .btn-group:has(.draft) {
+        .btn {
+            padding: 0.375rem 0.75rem;
+        }
+    }   
+}
+
+.multiselect__content-wrapper {
+	z-index: 5000;
+}
+
+/*Reset trumbowyg editor table width*/
+html[data-bs-theme=light] .trumbowyg-editor table,
+html[data-bs-theme=dark] .trumbowyg-editor table {
+	width: unset;
+}
+
+html[dir][data-bs-theme=light] .dropdown-menu,
+html[dir][data-bs-theme=dark] .dropdown-menu {
+    z-index: 100000000;
+}
+
+.event-log-level {
+    display: inline-block;
+    margin-right: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem; 
+}
+
+.event-log-level-Information,
+.event-log-level-INF {
+    background-color: #d7f1db;
+    color: #1e6529;
+}
+
+.event-log-level-Warning,
+.event-log-level-WRN {
+    background-color: #fbe5af;
+    color: #795909;
+}
+
+.event-log-level-Error,
+.event-log-level-ERR {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.event-log-level-Verbose,
+.event-log-level-VRB {
+    background-color: #cff4fc;
+    color: #055160;
+}
+
+.event-log-level-Debug,
+.event-log-level-DBG {
+    background-color: #f9ddef;
+    color: #7f275e;
+}
+
+.event-log-level-Fatal,
+.event-log-level-FTL {
+    background-color: #767676;
+    color: #ffffff;
+}
+
+.event-logs li.list-group-item button {
+    display: block;
+    padding: 0;
+    width: 100%;
+    text-align: left!important;
+    outline: none;
+}
+
+.event-logs li.list-group-item button:focus {
+    box-shadow: none;
+}
+
+.trumbowyg-editor-box {
+    background-color: #ffffff
+}
+.field-wrapper.field-wrapper-content-menu-item-part-selected-content-item {
+    position: relative;
+    z-index: 1000000;
+}
+
+
+.dropdown-item.add-widget.btn-sm[data-widget-type="PuxPage"] {
+    display: none !important;
+}
+
+.pux-generator {
+    padding: 2rem;
+}
+
+.pux-generator .pux-generator-row label {
+    display: block;
+}
+
+.pux-generator .pux-generator-row input[type=text],
+.pux-generator .pux-generator-row textarea {
+    padding: 0.375rem 0.75rem;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+}
+.pux-generator .pux-generator-row textarea {
+    height: unset;
+}
+.pux-generator .pux-generator-row:has(input[type=checkbox]) {
+    display: flex;
+    gap: 1rem;
+}
+
+.pux-generator .pux-generator-row + .pux-generator-row {
+    margin-top: 1rem;
+}
+
+.pux-generator .pux-generator-row.separate-row {
+    padding-top: 2rem;
+}
+
+.vue-multiselect {
+    background-color: unset !important;
+}
+
+.pux-generator .btn.btn-success {
+    margin-top: 2rem;
+}
