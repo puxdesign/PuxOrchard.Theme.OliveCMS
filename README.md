@@ -21,6 +21,7 @@ To quickly integrate OliveCMS Theme into your OrchardCore CMS:
 
 1. **Via NuGet Package:**
    - Add the package to your project and activate the theme in the admin.
+   - ``dotnet add package PuxOrchard.Theme.OliveCMS``
 
 2. **Cloning the Repository:**
    - Clone this repository, add references to your project, and activate the theme in the admin dashboard.
@@ -28,8 +29,8 @@ To quickly integrate OliveCMS Theme into your OrchardCore CMS:
   
 ## Supported versions of OrchardCore
 - it was created on 1.8.4 version of OrchardCore
-- then it was ported and adapted to support 2.1.4 version of OrchardCore
-- it should be backwards compatible with version > 1.8.3
+- then it was ported and adapted to support 2.1.5 version of OrchardCore
+- it should be backwards compatible with version > 1.8.3 - 2.1.5
 - you may need to build the theme on your own, in case nuget for your version is not available
 
 ## Disclaimer
