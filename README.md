@@ -59,6 +59,11 @@ OliveCMS Theme uses the following tools:
 * **[Coolicons](https://coolicons.cool/)** - For crisp, expressive icons enriching the UI experience (CC 4.0 License).
 * **[OpenSans](https://fonts.google.com/specimen/Open+Sans)** - For clear and legible typography (SIL License).
 
+## Roadmap
+* Dark theme support
+* Revamp other admin sections - templates, shortcodes, content definitions, settings
+* RTL support
+
 ## License
 
 The theme itself adheres to the permissive BSD-3-Clause License, ensuring compatibility with a wide array of projects and maintaining openness for developers and businesses alike.
