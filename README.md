@@ -57,7 +57,7 @@ npm run dev         # Run the theme for development
 OliveCMS Theme uses the following tools:
 
 * **[Bootstrap 5](https://getbootstrap.com/)** - For responsive design and familiar UI components (MIT License).
-* **[Coolicons]([https://coolicons.cool/](https://github.com/krystonschwarze/coolicons)** - For crisp, expressive icons enriching the UI experience (CC 4.0 License).
+* **[Coolicons](https://github.com/krystonschwarze/coolicons)** - For crisp, expressive icons enriching the UI experience (CC 4.0 License).
 * **[OpenSans](https://fonts.google.com/specimen/Open+Sans)** - For clear and legible typography (SIL License).
 
 ## Roadmap
