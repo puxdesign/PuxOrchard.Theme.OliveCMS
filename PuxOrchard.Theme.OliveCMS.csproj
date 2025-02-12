@@ -12,7 +12,9 @@
         <PackageTags>OrchardCore, CMS, Theme</PackageTags>
         <PackageIconUrl>https://www.puxdesign.cz/favicon-32x32.png</PackageIconUrl>
         <PackageLicenseExpression>BSD-3-Clause</PackageLicenseExpression>
-		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageIcon>icon.png</PackageIcon>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<PreserveCompilationReferences>false</PreserveCompilationReferences>
 	</PropertyGroup>
 
@@ -22,6 +24,8 @@
 	
 	<ItemGroup>
 		<FrameworkReference Include="Microsoft.AspNetCore.App" />
+        <None Include="README.md" Pack="true" PackagePath="\"/>
+        <None Include="pack\icon.png" Pack="true" PackagePath="\"/>
 	</ItemGroup>
 
 	<ItemGroup>
