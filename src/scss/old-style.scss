@@ -213,15 +213,15 @@
 }
 
 [data-widget-type*=Section]:before {
-    content: "\e938";
+    content: "\e931";
 }
 
 [data-widget-type*=SectionModal]:before {
-    content: "\e937";
+    content: "\e931";
 }
 
 [data-widget-type*=BenefitsContainer]:before {
-    content: "\e910";
+    content: "\e928";
 }
 
 [data-widget-type*=BenefitItem]:before {
@@ -229,105 +229,105 @@
 }
 
 [data-widget-type*=Collapse]:before {
-    content: "\e911";
+    content: "\e945";
 }
 
 [data-widget-type*=CrosslinkContainer]:before {
-    content: "\e912";
+    content: "\e93b";
 }
 
 [data-widget-type*=CTA]:before {
-    content: "\e914";
+    content: "\e933";
 }
 
 [data-widget-type*=CustomCode]:before {
-    content: "\e915";
+    content: "\e907";
 }
 
 [data-widget-type*=DownloadsContainer]:before {
-    content: "\e916";
+    content: "\e92e";
 }
 
 [data-widget-type*=DownloadItem]:before {
-    content: "\e916";
+    content: "\e92e";
 }
 
 [data-widget-type*=Gallery]:before {
-    content: "\e919";
+    content: "\e938";
 }
 
 [data-widget-type*=Iframe]:before {
-    content: "\e91a";
+    content: "\e955";
 }
 
 [data-widget-type*=ImageContent]:before {
-    content: "\e91b";
+    content: "\e934";
 }
 
 
 [data-widget-type*=LogosContainer]:before {
-    content: "\e91d";
+    content: "\e93e";
 }
 
 [data-widget-type*=Logo]:before {
-    content: "\e91d";
+    content: "\e93e";
 }
 
 [data-widget-type*=Map]:before {
-    content: "\e91e";
+    content: "\e93d";
 }
 
 [data-widget-type*=NumbersContainer]:before {
-    content: "\e920";
+    content: "\e93c";
 }
 
 
 [data-widget-type*=NumberItem]:before {
-    content: "\e920";
+    content: "\e93c";
 }
 
 [data-widget-type*=PersonContainer]:before {
-    content: "\e921";
+    content: "\e952";
 }
 
 [data-widget-type*=Person]:before {
-    content: "\e921";
+    content: "\e952";
 }
 
 [data-widget-type*=Repeater]:before {
-    content: "\e934";
+    content: "\e926";
 }
 
 [data-widget-type*=TabsContainer]:before {
-    content: "\e926";
+    content: "\e95c";
 }
 
 [data-widget-type*=TabItem]:before {
-    content: "\e926";
+    content: "\e95c";
 }
 
 [data-widget-type*=TestimonialItem]:before {
-    content: "\e927";
+    content: "\e953";
 }
 
 [data-widget-type*=TestimonialsContainer]:before {
-    content: "\e928";
+    content: "\e953";
 }
 
 [data-widget-type*=TopImage]:before {
-    content: "\e92b";
+    content: "\e94e";
 }
 
 [data-widget-type*=TopImageContainer]:before {
-    content: "\e92c";
+    content: "\e94e";
 }
 
 [data-widget-type*=Video]:before {
-    content: "\e92e";
+    content: "\e941";
 }
 
 [data-widget-type*=Text]:before {
-    content: "\e929";
+    content: "\e932";
 }
 
 [data-widget-type*=Wysiwyg]:before {
@@ -335,7 +335,7 @@
 }
 
 [data-widget-type*=Form]:before {
-    content: "\e918";
+    content: "\e940";
 }
 
 [data-widget-type*=Input]:before {
@@ -385,7 +385,7 @@ html[dir][data-bs-theme=dark] .trumbowyg-editor th:after {
 /* .mb-3:has(.btn.save)*/ {
     position: sticky;
     bottom: 0;
-    z-index: 1000;
+    z-index: 49;
     background: $gray-200;
     padding: 1rem 0;
     border-top: 2px solid $gray-300;

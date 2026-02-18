@@ -102,6 +102,7 @@ ol.media-items-grid.row {
 .la-left-sidebar-logo {
     display: flex;
     align-items: center;
+		justify-content: space-between;
     gap: 0.625rem;
     padding: 0 2.2rem 3.125rem;
     img {
@@ -116,9 +117,14 @@ ol.media-items-grid.row {
 
 .left-sidebar-compact {
     .la-left-sidebar-logo {
+				position: relative;
+				overflow: hidden;
         justify-content: center;
         padding: 0 0 3.125rem 0;
         img {
+						position: absolute;
+						top: 8px;
+						left: 11px;
             max-height: 2.125rem;
         }
         span {
@@ -134,14 +140,6 @@ ol.media-items-grid.row {
 
 .ta-content {
     & > form {
-        &:has(.permissions-list) {
-            padding: 1rem;
-            background-color: $white;
-            border-radius: 0.5rem;
-            .mb-3:has(.save) {
-                background-color: $white;
-            }
-        }
         & > .card {
             padding: 0 1.25rem 0 1.8rem;
             background-color: inherit;
@@ -172,29 +170,6 @@ ol.media-items-grid.row {
     .card {
         background: inherit;
         border: none;
-        &.theme-card {
-            margin: 0.5rem;
-            padding: 1rem;
-            border-radius: $border-radius;
-            border: 1px solid $green;
-            background-color: $white;
-            &:has(.no-multisubmit) {
-                border-color: $gray-300;
-            }
-            .card-body {
-                padding-top: 1rem;
-                .list-group {
-                    padding: 0;
-                }
-            }
-            .card-footer {
-                padding-top: 1rem;
-                background-color: inherit;
-            }
-        }
-        &:has(.has-search) {
-            background-color: inherit !important;
-        }
         .card-body {
             .has-search {
                 position: relative;
@@ -211,14 +186,6 @@ ol.media-items-grid.row {
                     border-radius: $border-radius !important;
                 }
             }
-        }
-    }
-    &:has(#graphiql) {
-        position: relative;
-        #graphiql {
-            top: 1.8rem;
-            left: 0;
-            border-left: 1px solid $gray-300;
         }
     }
 }
@@ -297,86 +264,68 @@ ol.media-items-grid.row {
 }
 
 .list-group {
-	.form-check {
-		#items {
-			font-weight: 700;
-
-			.text-muted {
-				font-weight: 400;
-				color: $gray-600;
-			}
-		}
-	}
-
-	.list-group-item {
-		.summary {
-			align-items: center;
-			flex-wrap: wrap;
-
-			.badge,
-			.badge a {
-				font-size: 0.875rem;
-				line-height: 1.32rem;
-				color: $gray-600;
-				text-decoration: none;
-				font-weight: 400;
-
-				svg {
-					color: $black !important;
-				}
-			}
-
-			.contentitem {
-				&.me-2 {
-					margin: 0;
-					padding-right: 0.94rem;
-					border-right: 1px solid $gray-300;
-
-					a {
-						font-size: 1.25rem;
-						line-height: 1.32rem;
-						font-weight: 600;
-						color: $black;
-						text-decoration: none;
-					}
-				}
-			}
-
-			.contenttype {
-				margin: 0;
-				padding: 0 0.94;
-			}
-
-			.tags,
-			.metadata {
-				margin: 0;
-
-				.badge {
-					margin: 0;
-					padding: 0 0.94;
-				}
-			}
-		}
-
-		.justify-content-end {
-			.actions {
-				align-items: center;
-			}
-		}
-
-		.col.primary {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 0.625rem;
-
-			.badge {
-				padding: 0.34rem 0.625rem;
-				background-color: $gray-200;
-				border-radius: $border-radius-pill;
-				font-weight: 400;
-			}
-		}
-	}
+    .form-check {
+        #items {
+            font-weight: 700;
+            .text-muted {
+                font-weight: 400;
+                color: $gray-600;
+            }
+        }
+    }
+    .list-group-item {
+        .summary {
+            align-items: center;
+            .badge,
+            .badge a {
+                font-size: 0.875rem;
+                line-height: 1.32rem;
+                color: $gray-600;
+                text-decoration: none;
+                font-weight: 400;
+                svg {
+                    color: $black !important;
+                }
+            }
+            .contentitem {
+                &.me-2 {
+                    margin: 0;
+                    padding-right: 0.94rem;
+                    border-right: 1px solid $gray-300;
+                    a {
+                        font-size: 1.25rem;
+                        line-height: 1.32rem;
+                        font-weight: 600;
+                        color: $black;
+                        text-decoration: none;
+                    }
+                }
+            }
+            .contenttype {
+                margin: 0;
+                padding: 0 0.94;
+            }
+            .tags,
+            .metadata {
+                margin: 0;
+                .badge {
+                    margin: 0;
+                    padding: 0 0.94;
+                }
+            }
+        }
+        .col.primary {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.625rem;
+            .badge {
+                padding: 0.34rem 0.625rem;
+                background-color: $gray-200;
+                border-radius: $border-radius-pill;
+                font-weight: 400;
+            }
+        }
+    }
 }
 
 $media-container-name: media-part;
@@ -483,10 +432,8 @@ $media-container-break-xl: 87.5rem;
     }
 }
 
-.accordion,
-.edit-container {
-    .tab-pane,
-    .edit-item-parts {
+.accordion {
+    .tab-pane {
         & > .mb-3:not(.content-part-wrapper-flow-part) {
             max-width: 64rem;
         }
@@ -599,11 +546,6 @@ $media-container-break-xl: 87.5rem;
             }
         }
     }
-    &.tab-content {
-        .tab-pane {
-            padding: 1rem;
-        }
-    }
 }
 
 .btn-widget-add-below {
@@ -648,7 +590,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-pen-to-square) {
             &::before {
-                content: "\e907";
+                content: "\e925";
                 display:block;
             }
             svg {
@@ -657,7 +599,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-desktop) {
             &::before {
-                content: "\e909";
+                content: "\e91b";
                 display:block;
             }
             svg {
@@ -666,7 +608,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-magnifying-glass) {
             &::before {
-                content: "\e918";
+                content: "\e947";
                 display:block;
             }
             svg {
@@ -675,7 +617,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-sitemap ) {
             &::before {
-                content: "\e91d";
+                content: "\e920";
                 display:block;
             }
             svg {
@@ -684,7 +626,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-gear ) {
             &::before {
-                content: "\e91a";
+                content: "\e949";
                 display:block;
             }
             svg {
@@ -693,7 +635,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-lock ) {
             &::before {
-                content: "\e921";
+                content: "\e948";
                 display:block;
             }
             svg {
@@ -702,7 +644,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-clock-rotate-left ) {
             &::before {
-                content: "\e90f";
+                content: "\e95a";
                 display:block;
             }
             svg {
@@ -711,7 +653,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-list ) {
             &::before {
-                content: "\e923";
+                content: "\e940";
                 display:block;
             }
             svg {
@@ -720,7 +662,7 @@ $media-container-break-xl: 87.5rem;
         }
         &:has(.svg-inline--fa.fa-building ) {
             &::before {
-                content: "\e924";
+                content: "\e939";
                 display:block;
             }
             svg {
@@ -753,7 +695,7 @@ $media-container-break-xl: 87.5rem;
     }
     &:has(.svg-inline--fa.fa-arrow-up-right-from-square) {
         &::before {
-            content: "\e916";
+            content: "\e910";
         }
     }
     &:has(.svg-inline--fa.fa-sun) {
@@ -763,13 +705,13 @@ $media-container-break-xl: 87.5rem;
     }
     &:has(.svg-inline--fa.fa-user) {
         &::before {
-            content: "\e91f";
+            content: "\e912";
             font-size: 1.25rem;
         }
     }
     &:has(.svg-inline--fa.fa-moon) {
         &::before {
-            content: "\e908";
+            content: "\e904";
             font-size: 1.25rem;
         }
     }
@@ -794,12 +736,12 @@ $media-container-break-xl: 87.5rem;
     }
     &:has(.svg-inline--fa.fa-sun) {
         &::before {
-            content: "\e913";
+            content: "\e90e";
         }
     }
     &:has(.svg-inline--fa.fa-moon) {
         &::before {
-            content: "\e908";
+            content: "\e904";
             font-size: 1.25rem;
         }
     }
@@ -1113,14 +1055,16 @@ $media-container-break-xl: 87.5rem;
     }
 }
 .modal-body {
-    .card {
-        margin: 0.5rem;
-        background-color: $gray-100;
-        &.h-100 {
-            height: unset !important;
-        }
-        .card-body {
-            padding: 0.5rem;
+    #cards {
+        .card {
+            margin: 0.5rem;
+            background-color: $gray-100;
+            &.h-100 {
+                height: unset !important;
+            }
+            .card-body {
+                padding: 0.5rem;
+            }
         }
     }
 }
@@ -1133,16 +1077,4 @@ $media-container-break-xl: 87.5rem;
 
 .col-md-8 + .col-md-4.col-md-pull-end {
     padding-left: 1rem;
-}
-
-// orchard core theme
-
-.edit-container {
-    .edit-body {
-        padding: 1rem 0;
-    }
-}
-
-.widget-editor.card:focus-within {
-    border-color: #67c58d !important;
 }
