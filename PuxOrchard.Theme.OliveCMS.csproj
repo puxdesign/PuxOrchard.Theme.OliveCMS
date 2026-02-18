@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>net8.0</TargetFramework>
-		<Version>2.1.5.1</Version>
+		<Version>2.2.1</Version>
 		<AddRazorSupportForMvc>true</AddRazorSupportForMvc>
 		<IsPackable>true</IsPackable>
 		<Authors>PUXdesign</Authors>
@@ -29,14 +29,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="OrchardCore.Admin" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.Admin.Abstractions" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.Theme.Targets" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.Themes" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.Users" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.Workflows" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.ContentManagement" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.DisplayManagement" Version="2.1.5" />
-		<PackageReference Include="OrchardCore.ResourceManagement" Version="2.1.5" />
+		<PackageReference Include="OrchardCore.Admin" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.Admin.Abstractions" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.Theme.Targets" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.Themes" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.Users" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.Workflows" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.ContentManagement" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.DisplayManagement" Version="2.2.1" />
+		<PackageReference Include="OrchardCore.ResourceManagement" Version="2.2.1" />
 	</ItemGroup>
 </Project>
